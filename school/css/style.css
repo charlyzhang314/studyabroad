@@ -1,0 +1,174 @@
+﻿body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;font-size:66.3%;font-weight:normal;}
+fieldset,img{border:0;}
+ul,ol{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration: none;color:#000;}
+small{font-size:12px;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;}
+label,input,select,form img,button,textarea{vertical-align:middle;outline:none}
+address,caption,cite,code,dfn,em,strong,th,optgroup{font-style:normal;font-weight:normal;}
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clear{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clear{height:1%;}
+.clear{display:block;}
+/* End hide from IE-mac */
+*{-webkit-tap-highlight-color:rgba(0,0,0,0) !important;}
+html,body{position:relative;}
+body,input,select,textarea{font:12px "Microsoft YaHei","宋体",sans-serif;}
+
+#container{position: relative;}
+#container .section{position: relative;display: none}
+#container .section .bg{display: block;width: 100%;}
+#container.index1 #content1{display: block;}
+#container.index2 #content2{display: block;}
+#container.index3 #content3{display: block;}
+#container .section .link{position: absolute;width: 43vw;left: 50%;transform: translate(-50%,0);height: 18vw;background: rgba(0,0,0,0)}
+#container .section .card_link{position: absolute;width: 43vw;left: 50%;transform: translate(-50%,0);height: 12vw;background: rgba(0,0,0,0)}
+
+#top_bar{position: fixed;width: 100%;height: 6.5vw;z-index: 3;left: 0;top: 0}
+#top_bar .nav{opacity: 0;width: 100%;position: absolute;left: 0;top: 0;width: 100%;}
+#top_bar.index1 .nav1{opacity: 1;}
+#top_bar.index2 .nav2{opacity: 1;}
+#top_bar.index3 .nav3{opacity: 1;}
+#top_bar .nav_link{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+#top_bar .nav_link li{float: left;width: 33.33%;height: 100%;cursor: pointer;}
+
+.school1_link1{top: 81.3%}
+.school1_link2{top: 95.5%}
+
+.card1_link1{top: 82.4%}
+.card1_link2{top: 96.7%}
+
+.school2_link1{top: 83%}
+.school2_link2{top: 95.8%}
+
+.card2_link1{top: 84%}
+.card2_link2{top: 96.9%}
+
+.school3_link1{top: 78.3%}
+.school3_link2{top: 94.7%}
+
+.card3_link1{top: 79.6%}
+.card3_link2{top: 96%}
+
+
+
+.graduation{}
+.graduation .section{position: relative;}
+.graduation .section .back{display: block;width: 100%;}
+.graduation .section .link1{position: absolute;width: 73vw;left: 50%;transform: translate(-50%,0);top: 63vw;height: 49vw;background: rgba(0,0,0,0)}
+
+.history_back_btn{position: fixed;width: 15%;top: 40%;right: 10px;z-index: 9}
+
+
+#flight{position: relative;}
+#flight .section{position: relative;display: none}
+#flight .section .bg{display: block;width: 100%;}
+#flight.index1 #content1{display: block;}
+#flight.index2 #content2{display: block;}
+#flight .section .link{position: absolute;width: 36vw;left: 50%;transform: translate(-50%,0);height: 20vw;background: rgba(0,0,0,0)}
+.insurance_link1{bottom: 12vw;}
+
+#flight_top_bar{position: fixed;width: 100%;height: 7.7vw;z-index: 3;left: 0;top: 0}
+#flight_top_bar .nav{opacity: 0;width: 100%;position: absolute;left: 0;top: 0;width: 100%;}
+#flight_top_bar.index1 .nav1{opacity: 1;}
+#flight_top_bar.index2 .nav2{opacity: 1;}
+#flight_top_bar .nav_link{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+#flight_top_bar .nav_link li{float: left;width: 50%;height: 100%;cursor: pointer;}
+
+
+#exam{position: relative;}
+#exam .section{position: relative;display: none}
+#exam .section .bg{display: block;width: 100%;}
+#exam.index1 #content1{display: block;}
+#exam.index2 #content2{display: block;}
+#exam.index3 #content3{display: block;}
+#exam.index4 #content4{display: block;}
+#exam .section .link{position: absolute;width: 36vw;left: 50%;transform: translate(-50%,0);height: 20vw;background: rgba(0,0,0,0)}
+
+#exam_top_bar{position: fixed;width: 100%;height: 7.7vw;z-index: 3;left: 0;top: 0}
+#exam_top_bar .nav{opacity: 0;width: 100%;position: absolute;left: 0;top: 0;width: 100%;}
+#exam_top_bar.index1 .nav1{opacity: 1;}
+#exam_top_bar.index2 .nav2{opacity: 1;}
+#exam_top_bar.index3 .nav3{opacity: 1;}
+#exam_top_bar.index4 .nav4{opacity: 1;}
+#exam_top_bar .nav_link{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+#exam_top_bar .nav_link li{float: left;width: 25%;height: 100%;cursor: pointer;}
+.exam_tab1_link1{bottom: 12vw}
+.exam_tab2_link1{bottom: 8vw}
+.exam_tab3_link1{bottom: 15vw}
+.exam_tab4_link1{bottom: 10vw}
+
+#apply{position: relative;}
+#apply .section{position: relative;display: none}
+#apply .section .bg{display: block;width: 100%;}
+#apply.index1 #content1{display: block;}
+#apply.index2 #content2{display: block;}
+#apply.index3 #content3{display: block;}
+#apply.index4 #content4{display: block;}
+#apply .section .link{position: absolute;width: 36vw;left: 50%;transform: translate(-50%,0);height: 20vw;background: rgba(0,0,0,0)}
+
+#apply_top_bar{position: fixed;width: 100%;height: 7.7vw;z-index: 3;left: 0;top: 0}
+#apply_top_bar .nav{opacity: 0;width: 100%;position: absolute;left: 0;top: 0;width: 100%;}
+#apply_top_bar.index1 .nav1{opacity: 1;}
+#apply_top_bar.index2 .nav2{opacity: 1;}
+#apply_top_bar.index3 .nav3{opacity: 1;}
+#apply_top_bar.index4 .nav4{opacity: 1;}
+#apply_top_bar .nav_link{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+#apply_top_bar .nav_link li{float: left;width: 25%;height: 100%;cursor: pointer;}
+.apply_tab1_link1{bottom: 187vw}
+.apply_tab1_link2{bottom: 18vw}
+.apply_tab2_link1{bottom: 187vw}
+.apply_tab2_link2{bottom: 18vw}
+.apply_tab3_link1{bottom: 181vw}
+.apply_tab3_link2{bottom: 12vw}
+.apply_tab4_link1{bottom: 187vw}
+.apply_tab4_link2{bottom: 18vw}
+
+.payment{}
+.payment .section{position: relative;}
+.payment .section .back{display: block;width: 100%;}
+.payment .section .link1{position: absolute;width: 36vw;left: 50%;transform: translate(-50%,0);bottom: 24vw;height: 20vw;background: rgba(0,0,0,0)}
+
+.arrival{}
+.arrival .section{position: relative;}
+.arrival .section .back{display: block;width: 100%;}
+.arrival .section .link1{position: absolute;width: 36vw;left: 50%;transform: translate(-50%,0);bottom: 332vw;height: 20vw;background: rgba(0,0,0,0)}
+
+#notes{position: relative;}
+#notes .section{position: relative;display: none}
+#notes .section .bg{display: block;width: 100%;}
+#notes.index1 #content1{display: block;}
+#notes.index2 #content2{display: block;}
+#notes.index3 #content3{display: block;}
+#notes .section .link{position: absolute;width: 36vw;left: 50%;transform: translate(-50%,0);height: 20vw;background: rgba(0,0,0,0)}
+
+#notes_top_bar{position: fixed;width: 100%;height: 7.7vw;z-index: 3;left: 0;top: 0}
+#notes_top_bar .nav{opacity: 0;width: 100%;position: absolute;left: 0;top: 0;width: 100%;}
+#notes_top_bar.index1 .nav1{opacity: 1;}
+#notes_top_bar.index2 .nav2{opacity: 1;}
+#notes_top_bar.index3 .nav3{opacity: 1;}
+#notes_top_bar .nav_link{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+#notes_top_bar .nav_link li{float: left;width: 33.33%;height: 100%;cursor: pointer;}
+.notes_tab1_link1{bottom: 12vw}
+.notes_tab2_link1{bottom: 94vw}
+.notes_tab3_link1{bottom: 15vw}
+
+.news{}
+.news .headline{display: block;width: 100%;}
+.news .wrapper{position: relative;min-height: calc(100vh - 31.6vw);}
+.news .select_container{position: relative;height: 17.6vw;width: 100%}
+.news .select_container .selector{position: absolute;width: 25.2vw;top: 7.2vw;left: 4.7vw;overflow: hidden}
+.news .select_container .selector .bg{display: block;width: 100%;}
+.news .select_container .selector select{position: absolute;left: 0;top: 0;width: 150%;height: 100%;padding-left: 3.8vw;box-sizing: border-box;background: rgba(0,0,0,0);border:none;outline: none;appearance: none;color: black;font-size: 3.5vw;line-height: 6.2vw;}
+.news .news_list{position: relative;}
+.news .news_list li{position: relative;width: 90vw;display: block;margin:0 auto;padding: 2.8vw 0;background: url(../img/news-underline.png) center bottom no-repeat;background-size: 100% auto;}
+.news .news_list li .dot{position: absolute;left: 0vw;top: 4.8vw;width: 1.2vw;height: 1.2vw;background: url(../img/news-dot.png);background-size: 100% 100%;}
+.news .news_list li p{margin-left: 4.5vw;color: black;font-size: 3.5vw;line-height: 5vw;width: 61vw;}
+.news .news_list li .btn{position: absolute;right: 0vw;top: 50%;width: 17.7vw;height: 5vw;background: url(../img/check-btn.png);background-size: 100% 100%;transform: translate(0,-50%);}
+.news .visa_logo{display: block;width: 12.1vw;margin:0 auto;padding: 6vw;}
+
+
+
+

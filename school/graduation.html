@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/style.css?1" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <style type="text/css">
+        .graduation .section .link2{position: absolute;width: 73vw;left: 50%;transform: translate(-50%,0);top: 771vw;height: 21vw;background: rgba(0,0,0,0)}
+
+    </style>
+    <script src="https://hcm.publicis-groupe.cn/hcm.js"></script>
+    <script>
+    (function (g, o, f) {
+      g[f] =
+        g[f] ||
+        function () {
+          return g[f].q ? g[f].q.push(arguments) : (g[f].q = [arguments]);
+        };
+      g[o] = f;
+    })(window, "_HypersConsent", "_hcm");
+
+    _hcm('init', 48, {
+    api_url: 'https://hcm.publicis-groupe.cn',
+    noCustomize: true, 
+    defaultBlock: true,
+    allowList:["type=pv"],
+    headerImg: 'https://digitas.yijiuplus.com/studyabroad/img/header.png'
+    });
+    </script>
+</head>
+<body>
+    <div class="graduation">
+        <div class="section">
+            <img src="img/graduation-p1.jpg" class="back" />
+            <a href="https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=57" class="link1"></a>
+            <span data-href="https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1957" class="link2"></span>
+        </div>
+        <div class="section">
+            <img src="img/graduation-p2.jpg" class="back" />
+        </div>
+    </div>
+    <img src="img/back.png" class="history_back_btn" />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function getQueryVariable(variable){
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+
+        var isBank = decodeURI(getQueryVariable("isBank"));
+        var stageType = decodeURI(getQueryVariable("stage_type"));
+        var countryType = decodeURI(getQueryVariable("country_type"));
+        var tagAgeName = decodeURI(getQueryVariable("tag_age_name"));
+        var tagDestinationName = decodeURI(getQueryVariable("tag_destination_name"));
+        var tagStageName = decodeURI(getQueryVariable("tag_stage_name"));
+        var isBank = decodeURI(getQueryVariable("isBank"));
+
+        $(function(){
+
+            $(".history_back_btn").click(function(){
+                var bankName = getQueryVariable("bank") == false ? '' : getQueryVariable("bank");
+                var bankid = getQueryVariable("bankid") == false ? '' : getQueryVariable("bankid");
+
+                history.go(-1);
+
+                setTimeout(function(){
+                    if(isBank == "false"){
+                        location.href = "https://digitas.yijiuplus.com/studyabroad/";
+                    }else if(isBank == "true"){
+                        location.href = "https://digitas.yijiuplus.com/studyabroad/banks/interest.php?bank=" + bankName;
+                    }
+                },200)
+            })
+
+            $(".link2").click(function(){
+                _ha("send","action","schoolwork_benifits", {
+                    "button_name":"[schoolwork_benifits]",
+                    "stage_type":stageType,
+                    "country_type":countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_stage_name":tagStageName
+                });
+
+                var link = $(this).attr("data-href");
+                setTimeout(function(){
+                    location.href = link;
+                },300)
+            })
+           
+        })
+    </script>
+    <script>
+(function(i,d,t,o,u,h,s,f){i[t]=i[t]||[],i[t].push(h);i[h]=i[h]||function(){
+return (i[h].q=i[h].q||[]).push(arguments)};s=d.createElement(o);s.src=u;
+s.async=1;f=d.getElementsByTagName(o)[0];f.parentNode.insertBefore(s,f);
+})(window,document,"HyperAnalyticsObject","script","//t1.chinavivaki.com/hwt.js?v=1.10","_ha");
+_ha("create","8470",{
+    auto_track: true,
+    heatmap_url: "//analytics.chinavivaki.com/static/hwt-heatmap.js",
+    env: { inst: "saas" },
+    "storage_id":"_hid",
+    "api_url":"//t1.chinavivaki.com",
+    "swf_url":"//t1.chinavivaki.com/storage.swf#",
+    "iframe_url":"//t1.chinavivaki.com/storage.html"
+});
+_ha("send","pageview");
+</script>
+</body>
+</html>

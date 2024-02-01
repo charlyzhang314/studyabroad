@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/style.css?1" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <script>
+(function(i,d,t,o,u,h,s,f){i[t]=i[t]||[],i[t].push(h);i[h]=i[h]||function(){
+return (i[h].q=i[h].q||[]).push(arguments)};s=d.createElement(o);s.src=u;
+s.async=1;f=d.getElementsByTagName(o)[0];f.parentNode.insertBefore(s,f);
+})(window,document,"HyperAnalyticsObject","script","//t1.chinavivaki.com/hwt.js?v=1.10","_ha");
+_ha("create","7642",{
+    auto_track: true,
+    heatmap_url: "//analytics.chinavivaki.com/static/hwt-heatmap.js",
+    env: { inst: "saas" },
+    "storage_id":"_hid",
+    "api_url":"//t1.chinavivaki.com",
+    "swf_url":"//t1.chinavivaki.com/storage.swf#",
+    "iframe_url":"//t1.chinavivaki.com/storage.html"
+});
+_ha("send","pageview");
+</script>
+    <script src="https://hcm.publicis-groupe.cn/hcm.js"></script>
+    <script>
+    (function (g, o, f) {
+      g[f] =
+        g[f] ||
+        function () {
+          return g[f].q ? g[f].q.push(arguments) : (g[f].q = [arguments]);
+        };
+      g[o] = f;
+    })(window, "_HypersConsent", "_hcm");
+
+    _hcm('init', 48, {
+    api_url: 'https://hcm.publicis-groupe.cn',
+    noCustomize: true, 
+    defaultBlock: true,
+    allowList:["type=pv"],
+    headerImg: 'https://digitas.yijiuplus.com/studyabroad/img/header.png'
+    });
+    </script>
+</head>
+<body>
+    <div id="container" class="index1">
+        <div class="section" id="content1">
+            <div class="normal">
+                <img src="img/school-tab1-p1.jpg?3" class="bg" />
+                <span class="school1_link1 link" style="top: 95.2%"></span>
+                <!-- <span class="school1_link2 link"></span> -->
+                <span class="card_link card1_link1" data-num="1" style="top: 97.4%"></span>
+                <!-- <span class="card_link card1_link2" data-num="2"></span> -->
+            </div>
+            <div class="jh" style="display:none">
+                <img src="img/school-tab1-jh.jpg?3" class="bg" />
+                <span class="school1_link1 link" style="height: 16vw;top: 95.8%;"></span>
+            </div>
+        </div>
+        <div class="section" id="content2">
+            <div class="normal">
+                <img src="img/school-tab2-p1.jpg" class="bg" />
+                <img src="img/school-tab2-p2.jpg" class="bg" />
+                <span class="school2_link1 link" style="top:95.2%"></span>
+                <!-- <span class="school2_link2 link"></span> -->
+                <span class="card_link card2_link1" data-num="1" style="top:97%"></span>
+                <!-- <span class="card_link card2_link2" data-num="2"></span> -->
+            </div>
+            <div class="jh" style="display: none">
+                <img src="img/school-tab2-jh.jpg?3" class="bg" />
+                <span class="school2_link1 link" style="height: 16vw;top: 96.2%;"></span>
+            </div>
+            
+        </div>
+        <div class="section" id="content3">
+            <div class="normal">
+                <img src="img/school-tab3-p1.jpg?1" class="bg" />
+                <span class="school3_link1 link" style="top:95.3%"></span>
+                <!-- <span class="school3_link2 link"></span> -->
+                <span class="card_link card3_link1" data-num="1" style="top:97.4%"></span>
+                <!-- <span class="card_link card3_link2" data-num="2"></span> -->
+            </div>
+            <div class="jh" style="display:none">
+                <img src="img/school-tab3-jh.jpg?4" class="bg" />
+                <span class="school3_link1 link" style="height: 16vw;top: 95.2%;"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="top_bar" class="index1">
+        <img src="img/nav1.png" class="nav1 nav" />
+        <img src="img/nav2.png" class="nav2 nav" />
+        <img src="img/nav3.png" class="nav3 nav" />
+        <ul class="nav_link">
+            <li data-num="1"></li>
+            <li data-num="2"></li>
+            <li data-num="3"></li>
+        </ul>
+    </div>
+
+    <img src="img/back.png" class="history_back_btn" />
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var contentName = "QS世界大学排名";
+
+        function getQueryVariable(variable){
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+
+        var isBank = decodeURI(getQueryVariable("isBank"));
+        var bankName = decodeURI(getQueryVariable("bank"));
+        var bankId = getQueryVariable("bankid");
+
+        $(function(){
+            if(bankName == "jx" || bankId == "bocom"){
+                $(".jh").show();
+                $(".normal").hide();
+            }
+
+            $(".history_back_btn").click(function(){
+                var bankName = getQueryVariable("bank") == false ? '' : getQueryVariable("bank");
+                var bankid = getQueryVariable("bankid") == false ? '' : getQueryVariable("bankid");
+
+                history.go(-1);
+
+                setTimeout(function(){
+                    if(isBank == "false"){
+                        location.href = "https://digitas.yijiuplus.com/studyabroad/";
+                    }else if(isBank == "true"){
+                        location.href = "https://digitas.yijiuplus.com/studyabroad/banks/interest.php?bank=" + bankName;
+                    }
+                },200)
+            })
+
+
+
+            var name = getQueryVariable("bank");
+            //if(!name || name == "" || name == "false"){
+            if(isBank == "false"){
+                $("#content1 .card1_link1").attr("data-href","https://digitas.yijiuplus.com/studyabroad/cards.php?source=大学排名_QS_新东方");
+                $("#content1 .card1_link2").attr("data-href","https://digitas.yijiuplus.com/studyabroad/cards.php?source=大学排名_QS_斯芬克");
+                $("#content2 .card2_link1").attr("data-href","https://digitas.yijiuplus.com/studyabroad/cards.php?source=大学排名_USNew_新东方");
+                $("#content2 .card2_link2").attr("data-href","https://digitas.yijiuplus.com/studyabroad/cards.php?source=大学排名_USNew_斯芬克");
+                $("#content3 .card3_link1").attr("data-href","https://digitas.yijiuplus.com/studyabroad/cards.php?source=大学排名_泰晤士_新东方");
+                $("#content3 .card3_link2").attr("data-href","https://digitas.yijiuplus.com/studyabroad/cards.php?source=大学排名_泰晤士_斯芬克");
+            }else{
+                $("#content1 .card1_link1").attr("data-href","https://digitas.yijiuplus.com/studyabroad/banks/cards.php?source=大学排名_QS_新东方&bank=" + name);
+                $("#content1 .card1_link2").attr("data-href","https://digitas.yijiuplus.com/studyabroad/banks/cards.php?source=大学排名_QS_斯芬克&bank=" + name);
+                $("#content2 .card2_link1").attr("data-href","https://digitas.yijiuplus.com/studyabroad/banks/cards.php?source=大学排名_USNew_新东方&bank=" + name);
+                $("#content2 .card2_link2").attr("data-href","https://digitas.yijiuplus.com/studyabroad/banks/cards.php?source=大学排名_USNew_斯芬克&bank=" + name);
+                $("#content3 .card3_link1").attr("data-href","https://digitas.yijiuplus.com/studyabroad/banks/cards.php?source=大学排名_泰晤士_新东方&bank=" + name);
+                $("#content3 .card3_link2").attr("data-href","https://digitas.yijiuplus.com/studyabroad/banks/cards.php?source=大学排名_泰晤士_斯芬克&bank=" + name);
+            }
+
+
+            var stageType = decodeURI(getQueryVariable("stage_type"));
+            var countryType = decodeURI(getQueryVariable("country_type"));
+            var tagAgeName = decodeURI(getQueryVariable("tag_age_name"));
+            var tagDestinationName = decodeURI(getQueryVariable("tag_destination_name"));
+            var tagStageName = decodeURI(getQueryVariable("tag_stage_name"));
+
+            $(".school1_link1").click(function(){
+
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_qs_more":"QS了解礼遇详情"
+                });
+                _ha("send","action","universityranking_benifits", {
+                    "content_id":"QS了解礼遇详情1",
+                    "content_name":contentName,
+                    "botton_name":"了解礼遇详情",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                setTimeout(function(){
+                    location.href = "https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1898"
+                },300)
+            })
+
+            $(".school1_link2").click(function(){
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_qs_more":"QS了解礼遇详情"
+                });
+                _ha("send","action","universityranking_benifits", {
+                    "content_id":"QS了解礼遇详情2",
+                    "content_name":contentName,
+                    "botton_name":"了解礼遇详情",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                setTimeout(function(){
+                    location.href = "https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1899"
+                },300)
+            })
+
+            $(".school2_link1").click(function(){
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_usnews_more":"USNews了解礼遇详情"
+                });
+                _ha("send","action","universityranking_benifits", {
+                    "content_id":"USNews了解礼遇详情1",
+                    "content_name":contentName,
+                    "botton_name":"了解礼遇详情",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                setTimeout(function(){
+                    location.href = "https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1898"
+                },300)
+            })
+
+            $(".school2_link2").click(function(){
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_usnews_more":"USNews了解礼遇详情"
+                });
+                _ha("send","action","universityranking_benifits", {
+                    "content_id":"USNews了解礼遇详情2",
+                    "content_name":contentName,
+                    "botton_name":"了解礼遇详情",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                setTimeout(function(){
+                    location.href = "https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1899"
+                },300)
+            })
+
+            $(".school3_link1").click(function(){
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_the_more":"泰晤士了解礼遇详情"
+                });
+                _ha("send","action","universityranking_benifits", {
+                    "content_id":"泰晤士了解礼遇详情1",
+                    "content_name":contentName,
+                    "botton_name":"了解礼遇详情",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                setTimeout(function(){
+                    location.href = "https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1898"
+                },300)
+            })
+
+            $(".school3_link2").click(function(){
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_the_more":"泰晤士了解礼遇详情"
+                });
+                _ha("send","action","universityranking_benifits", {
+                    "content_id":"泰晤士了解礼遇详情2",
+                    "content_name":contentName,
+                    "botton_name":"了解礼遇详情",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                setTimeout(function(){
+                    location.href = "https://visaoffer.yijiuplus.com/index/index/detail?cid=31&id=1899"
+                },300)
+            })
+
+            $(".card1_link1, .card1_link2").click(function(){
+                var index = $(this).data("num");
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_qs_applycard":"QS立即办卡"
+                });
+                _ha("send","action","universityranking_applycard", {
+                    "content_id":"QS立即办卡"+index,
+                    "content_name":contentName,
+                    "botton_name":"立即办卡",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                var link = $(this).attr("data-href");
+                setTimeout(function(){
+                    location.href = link;
+                },300)
+            })
+
+            $(".card2_link1, .card2_link2").click(function(){
+                var index = $(this).data("num");
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_usnews_applycard":"USNews立即办卡"
+                });
+                _ha("send","action","universityranking_applycard", {
+                    "content_id":"USNews立即办卡"+index,
+                    "content_name":contentName,
+                    "botton_name":"立即办卡",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                var link = $(this).attr("data-href");
+                setTimeout(function(){
+                    location.href = link;
+                },300)
+            })
+
+            $(".card3_link1, .card3_link2").click(function(){
+                var index = $(this).data("num");
+                _ha("send","action", "studyabroad_schoolrank", {
+                    "rank_the_applycard":"泰晤士立即办卡"
+                });
+                _ha("send","action","universityranking_applycard", {
+                    "content_id":"泰晤士立即办卡"+index,
+                    "content_name":contentName,
+                    "botton_name":"立即办卡",
+                    "stage_type": stageType,
+                    "country_type": countryType,
+                    "tag_age_name":tagAgeName,
+                    "tag_destination_name": tagDestinationName,
+                    "tag_stage_name": tagStageName
+                });
+                var link = $(this).attr("data-href");
+                setTimeout(function(){
+                    location.href = link;
+                },300)
+            })
+
+            $(".nav_link li").click(function(){
+                var num = $(this).attr("data-num");
+                $("#top_bar, #container").attr("class","index"+num);
+                if(num == 1){
+                    contentName = "QS世界大学排名";
+                }else if(num == 2){
+                    contentName = "USNews世界大学排名";
+                }else if(num == 3){
+                    contentName = "泰晤士世界大学排名";
+                }
+                $('body,html').animate({
+                  scrollTop: 0
+                },0);
+
+                if(num == 1){
+                    _ha("send","action", "studyabroad_schoolrank", {
+                        "rank_qs":"QS世界大学排名"
+                    });
+                }else if(num == 2){
+                    _ha("send","action", "studyabroad_schoolrank", {
+                        "rank_usnews":"USNews世界大学排名"
+                    });
+                }else if(num == 3){
+                    _ha("send","action", "studyabroad_schoolrank", {
+                        "rank_the":"泰晤士世界大学排名"
+                    });
+                }
+            })
+        })
+    </script>
+</body>
+</html>
